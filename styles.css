@@ -25,6 +25,7 @@ header {
     padding: 24px 0;
     background-color: transparent;
     color: #A8BFBA;
+    flex-wrap: wrap;
 }
 
 section {
@@ -42,6 +43,30 @@ section {
     border: none;
     border-radius: 8px;
     font-size: 14px;
-    font-weight: 600px;
+    font-weight: 600;
     cursor: pointer;
+}
+
+.resumen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px
+}
+
+.cantidad{
+    font-size: 28px;
+    font-weight: 600;
+    margin: 8px 0 0;
+}
+.titulo-tarjeta{
+    font-size: 16px;
+    color: #A8BFBA;
+}
+@media(max-width: 600px){
+    .resumen{
+        grid-template-columns: 1fr;
+    }
+}
+.resumen section{
+    margin-bottom: 0;
 }
