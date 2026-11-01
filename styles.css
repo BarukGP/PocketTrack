@@ -64,6 +64,52 @@ section {
     font-size: 16px;
     color: #A8BFBA;
 }
+
+#modal-movimiento{
+    background-color: #17282C;
+    color: #EDF5F2;
+    padding: 24px;
+    border: 1px solid #30474B;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 480px;
+    margin: auto;
+}
+
+#form-movimiento{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+#form-movimiento input,
+#form-movimiento select{
+   background-color: #0D171A;
+   color: #EDF5F2;
+   border: 1px solid #30474B;
+   border-radius: 8px;
+   padding: 12px;
+   font: inherit;
+   width: 100%;
+}
+
+.acciones-formulario{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.btn_cancelar{
+    background-color: transparent;
+    color: #EDF5F2;
+    padding: 12px 20px;
+    border: 1px solid #30474B;
+    border-radius: 8px;
+    font: inherit;
+    cursor: pointer;
+}
 @media(max-width: 600px){
     .resumen{
         grid-template-columns: 1fr;
